@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Augmented Cinema</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="First time in Indian Cinemas - Movie Songs in Augmented Reality">
+    <link href="static/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="static/app.css" rel="stylesheet">
+    <link href="static/app-theme.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300italic,100,100italic,300" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]><script src="static/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body data-target=".content-nav">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="span5">
+            <h1>Augmented Cinema</h1>
+          </div>
+          <div class="span7">
+            <menu>
+              <ul>
+                <li><a href="" data-title="Augmented Cinema" class="menu"><img src="static/logo.png" alt="Augmented Cinema"/></a></li>
+				<li><a href="https://play.google.com/store/apps/details?id=com.ajts.augmentedcinema" data-title="Download App from Play Store" target="_blank" class="menu">Download App</a></li>
+              </ul>
+            </menu>
+          </div>
+      </div>
+    </header>
+    <section id="subtitle">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <h2>First time in Indian Cinemas - Movie Songs in Augmented Reality</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="body">
+      <div class="container">
+        <div class="row">
+          <div class="span9">
+            <h3 id="introduction">Introduction</h3>
+            <p>First time in Indian Cinemas Movie Songs in Augmented Reality. Thalapathy fans proudly launching this app for thalapaty's <b>"Mersal"</b> movie.
+			Happiness overloaded by all our thalapathy fans. Simply scan through the songs posterd of Mersal in your phone to listen the amazing songs of Mersal.
+			Serving a feast to all our Thalapathy Vijay fans. Install Augmented Cinema App and enjoy the songs.</p>
+			<p>Eagerly waiting to watch Mersal on theatre!!!</p>
+			
+			<i><h4 id="poster">Mersal Songs</h4></i>
+			<p class="screenshot"><img src="static/mersal_1.jpg" alt="Aalaporan Tamizhan."></p>
+            <p class="screenshot"><img src="static/mersal_2.png" alt="Neethane."></p>
+            <p class="screenshot"><img src="static/mersal_3.jpg" alt="Mersal Arasan."></p>
+            <p class="screenshot"><img src="static/mersal_4.jpg" alt="Macho."></p>
+			
+          </div>
+          <div class="span3">
+            <div class="content-nav" data-spy="affix" data-offset-top="80">
+              <ul class="nav nav-tabs nav-stacked primary">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#poster">Posters</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.ajts.augmentedcinema" target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/jquery.smooth-scroll.min.js"></script>
+    <script src="static/jquery-maven-artifact.min.js"></script>
+    <script src="static/prettify.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        // Syntax highlight code blocks.
+        prettyPrint();
+
+        // Spy on scroll position for real-time updating of current section.
+        $('body').scrollspy();
+
+        // Use smooth-scroll for internal links.
+        $('a').smoothScroll();
+
+        // Enable tooltips on the header nav image items.
+        $('.menu').tooltip({
+          placement: 'bottom',
+          trigger: 'hover',
+          container: 'body',
+          delay: {
+            show: 500,
+            hide: 0
+          }
+        });
+
+        // Look up the latest version of the library.
+        $.fn.artifactVersion('com.squareup.picasso', 'picasso', function(version, url) {
+          $('.version').text(version);
+          $('.version-tag').text('v' + version);
+          $('.version-href').attr('href', url);
+        });
+      });
+    </script>
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/59dfb072c28eca75e4625b84/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+  </body>
+</html>
